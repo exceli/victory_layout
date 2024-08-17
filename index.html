@@ -8,7 +8,21 @@
 </head>
 
 <body>
-    <h1>Hello, Webpack!</h1>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__address-wrap">
+                    <img class="header__image header__image--address" src="public/address-placemark.svg" alt="address">
+                    <address class="header__address">Новосибирск, ул. Дунаевского, 25/1 </address>
+                </div>
+
+                <div class="header__hours-wrap">
+                    <img class="header__image header__image--clock" src="public/clock.svg" alt="clock">
+                    <span class="header__hours">Ежедневно с 9:00 до 20:00</span>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <script src="dist/bundle.js"></script>
 </body>
