@@ -218,3 +218,39 @@ body {
         padding: 8px 20px;
     }
 }
+
+.main {
+    .section {
+        background-color: #F3F6FB;
+
+        .container {
+            .breadcrumbs {
+                display: flex;
+                align-items: center;
+
+                padding: 12px 0;
+
+                &__list {
+                    display: flex;
+                }
+
+                &__item {
+                    &:not(:last-child) {
+                        margin-right: 26px;
+
+                        &::after {
+                            content: url('/public/breadcrumbs-arrow.svg');
+                            display: inline-block;
+                            margin-left: 23px;
+                        }
+                    }
+                }
+
+                &__link {
+                    color: #646970;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
