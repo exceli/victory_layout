@@ -36,6 +36,19 @@ address {
     font-style: normal;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+:root {
+    --btn-color: rgb(46, 88, 219);
+    --text-color: rgb(21, 21, 21);
+    --primary-color: rgb(255, 255, 255);
+    --gray-color: rgb(156, 165, 179);
+}
+
 @font-face {
     font-family: "PT Root UI";
     src: url("../fonts/PT-Root-UI_Light.ttf");
@@ -70,13 +83,23 @@ body {
     font-size: 14px;
     font-style: normal;
     line-height: 24px;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .container {
-    max-width: 1332px;
-    margin: 0 auto;
-    box-sizing: border-box;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 294px
+}
+
+.primary-btn {
+    border: 0;
+    border-radius: 16px;
+    background-color: var(--btn-color);
+
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-color);
 }
 
 .header {
@@ -110,6 +133,88 @@ body {
         .header__hours {
             font-size: 14px;
             font-weight: 400;
+            color: var(--primary-color);
         }
+    }
+
+    &__main {
+        padding: 12px 0;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+        display: flex;
+    }
+
+    &__nav {
+        display: flex;
+
+        &-list {
+            display: flex;
+        }
+
+        &-item:not(:last-child) {
+            margin-right: 4px;
+        }
+
+        &-link {
+            padding: 10px 20px;
+
+            border: 1px solid transparent;
+            border-bottom-color: rgb(220, 225, 233);
+            border-radius: 16px;
+
+            transition: all .15s;
+
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &-link:hover {
+            border: 1px solid var(--btn-color);
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+
+        padding: 3px 7px;
+
+        margin-right: 8px;
+
+        border: 1px solid var(--gray-color);
+        border-radius: 16px;
+
+        &-input {
+            border: none;
+
+            font-size: 14px;
+            line-height: 24px;
+            color: var(--text-color);
+            padding: 4px 12px;
+        }
+
+        &-input::placeholder {
+            color: var(--gray-color);
+        }
+
+        &-input:focus {
+            outline: none;
+        }
+    }
+
+    &__btn {
+        padding: 8px 20px;
     }
 }
