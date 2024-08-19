@@ -1,0 +1,118 @@
+.header {
+    background-color: #fff;
+
+    &__top {
+        background: $black;
+        padding: 4px 0;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__address-wrap,
+    &__hours-wrap {
+        display: flex;
+        align-items: center;
+
+        .header__image {
+            width: 16px;
+            height: 15px;
+            margin-right: 4px;
+
+            &--address {}
+
+            &--clock {}
+        }
+
+        .header__address,
+        .header__hours {
+            font-size: 14px;
+            font-weight: 400;
+            color: $white;
+        }
+    }
+
+    &__main {
+        padding: 12px 0;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+        display: flex;
+    }
+
+    &__nav {
+        display: flex;
+
+        &-list {
+            display: flex;
+        }
+
+        &-item:not(:last-child) {
+            margin-right: 4px;
+        }
+
+        &-link {
+            padding: 10px 20px;
+
+            border: 1px solid transparent;
+            border-bottom-color: rgb(220, 225, 233);
+            border-radius: 16px;
+
+            transition: all .15s;
+
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &-link:hover {
+            border: 1px solid $blue;
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+
+        padding: 3px 7px;
+
+        margin-right: 8px;
+
+        border: 1px solid $gray;
+        border-radius: 16px;
+
+        &-input {
+            border: none;
+
+            font-size: 14px;
+            line-height: 24px;
+            color: $black;
+            padding: 4px 12px;
+        }
+
+        &-input::placeholder {
+            color: $gray;
+        }
+
+        &-input:focus {
+            outline: none;
+        }
+    }
+
+    &__btn {
+        padding: 8px 20px;
+    }
+}

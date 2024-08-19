@@ -1,0 +1,425 @@
+.main {
+    .section {
+        padding: 40px 0;
+
+        .container {
+            .main {
+                &__header {
+                    padding-bottom: 24px;
+                }
+
+                &__top {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                }
+
+                .top {
+                    &__left {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    &__title {
+                        margin-right: 16px;
+
+                        font-size: 36px;
+                        font-weight: 700;
+                        line-height: 44px;
+                    }
+
+                    &__subtitle {
+                        color: $gray;
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 32px;
+                    }
+
+                    &__right {
+                        display: flex;
+                        align-items: center;
+
+                        padding: 3px 13px;
+
+                        border-radius: 16px;
+                        background: rgb(220, 225, 233);
+
+                        .dot {
+                            padding: 2px;
+
+                            margin-right: 9px;
+
+                            border-radius: 50%;
+                            background-color: $blue;
+                        }
+                    }
+
+                    &__text {
+                        color: rgb(100, 105, 112);
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 20px;
+                    }
+                }
+
+                &__content {
+                    display: flex;
+                    align-items: stretch;
+                    justify-content: space-between;
+                    gap: 12px;
+                }
+
+                &__left,
+                &__right {
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
+
+.left {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        gap: 12px;
+
+        height: 100%;
+    }
+
+    &__top {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-grow: 1;
+
+        border-radius: 16px;
+        background: #fff;
+    }
+
+    &__image {
+        width: 534px;
+        height: 387px;
+    }
+
+    &__sale {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 4px 12px;
+        border-radius: 0 16px 0 16px;
+        background: $red;
+    }
+
+    &__sale-text {
+        color: $white;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        padding: 16px;
+    }
+
+    &__label {
+        color: $gray;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    &__value {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__bottom {
+        padding: 10px 15px;
+
+        flex-shrink: 0;
+
+        border: 1px solid rgb(220, 225, 233);
+        border-radius: 16px;
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+
+        &__list {
+            display: flex;
+            align-items: center;
+
+            line-height: normal;
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+        }
+
+        &__btn {
+            width: 24px;
+            height: 24px;
+
+            border-radius: 50%;
+            border: 1px solid rgb(220, 225, 233);
+        }
+
+        .select {
+            width: 32px;
+            height: 32px;
+        }
+
+        .gray {
+            background-color: rgb(224, 224, 224);
+        }
+
+        .black {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .white {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .blue {
+            background-color: rgb(170, 197, 240);
+        }
+
+        .red {
+            background-color: rgb(195, 19, 19);
+        }
+    }
+}
+
+.right {
+    border: 1px solid rgb(220, 225, 233);
+    border-radius: 16px;
+
+    &__wrap {
+        padding: 40px;
+    }
+
+    &__card-list {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    &__card-item {
+        flex: 1;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding: 10px;
+
+        border-radius: 16px;
+        background: rgb(228, 236, 248);
+
+        width: 100%;
+        height: 100%;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        &__image {
+            width: 24px;
+            height: 24px;
+
+            margin-bottom: 2px;
+        }
+
+        &__content {
+            margin-top: auto;
+        }
+
+        &__label {
+            margin-bottom: 2px;
+        }
+
+        &__value {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+    }
+
+    .checkbox-wrap {
+        margin-top: 20px;
+        margin-bottom: 16px;
+
+        &__list {}
+
+        &__item {}
+
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 10px 0;
+
+            width: 100%;
+        }
+
+        &__check {
+            display: flex;
+            align-items: center;
+        }
+
+        &__input {
+            display: none;
+        }
+
+        .custom-checkbox {
+            position: relative;
+
+            width: 48px;
+            height: 24px;
+
+            margin-right: 8px;
+
+            background-color: rgb(228, 236, 248);
+            border: 1px solid transparent;
+            border-radius: 16px;
+
+            cursor: pointer;
+
+            transition: background-color 0.3s ease;
+
+            span {
+                position: absolute;
+                top: 50%;
+                left: 4px;
+
+                width: 16px;
+                height: 16px;
+
+                background-color: #fff;
+                border-radius: 50%;
+
+                transform: translateY(-50%);
+                transition: left 0.3s ease,
+                    border 0.3s ease-in-out;
+            }
+        }
+
+        &__input:checked+.custom-checkbox {
+            border: 1px solid $blue;
+
+            span {
+                background-color: $blue;
+            }
+        }
+
+        &__input:checked+.custom-checkbox span {
+            left: calc(100% - 19px);
+        }
+
+        &__label {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        &__price {
+            color: $blue;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+    }
+
+    .sale {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 20px;
+
+        &__title {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        &__price {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+        }
+    }
+
+    .price {
+        margin-bottom: 40px;
+
+        &__wrap {
+            display: flex;
+            align-items: center;
+
+            margin-bottom: 9px;
+        }
+
+        &__title {
+            margin-right: 16px;
+
+            color: $blue;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 44px;
+        }
+
+        &__credit {
+            padding: 0 12px;
+
+            border-radius: 16px;
+            background: rgb(228, 236, 248);
+
+            color: $blue;
+            font-size: 14px;
+        }
+
+        &__discount {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+
+        gap: 12px;
+
+        &__button {
+            flex: 1;
+
+            padding: 13px;
+
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+        }
+    }
+}

@@ -1,5 +1,10 @@
 @import '~normalize.scss/normalize';
 
+@import './reset';
+@import './variables';
+@import './fonts';
+@import './core';
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -11,29 +16,9 @@ html {
     box-sizing: inherit;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-    margin: 0;
-}
-
 a {
     color: inherit;
     text-decoration: none;
-}
-
-p {
-    margin: 0;
-}
-
-img {
-    max-width: 100%;
-}
-
-address {
-    font-style: normal;
 }
 
 ul {
@@ -42,48 +27,11 @@ ul {
     list-style: none;
 }
 
-:root {
-    --btn-color: rgb(46, 88, 219);
-    --text-color: rgb(21, 21, 21);
-    --primary-color: rgb(255, 255, 255);
-    --gray-color: rgb(156, 165, 179);
-}
-
-@font-face {
-    font-family: "PT Root UI";
-    src: url("../fonts/PT-Root-UI_Light.ttf");
-    font-display: swap;
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "PT Root UI";
-    src: url("../fonts/PT-Root-UI_Medium.ttf");
-    font-display: swap;
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-@font-face {
-    font-family: "PT Root UI";
-    src: url("../fonts/PT-Root-UI_Bold.ttf");
-    font-display: swap;
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-body {
-    font-family: "PT Root UI", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    font-style: normal;
-    line-height: 24px;
-    color: var(--text-color);
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .container {
@@ -92,165 +40,26 @@ body {
     padding: 0 294px
 }
 
-.primary-btn {
-    border: 0;
+.button--primary {
     border-radius: 16px;
-    background-color: var(--btn-color);
+    background-color: $blue;
 
     font-size: 14px;
     font-weight: 700;
-    color: var(--primary-color);
+    color: $white;
 }
 
-.header {
-    &__top {
-        background: #151515;
-        padding: 4px 0;
+.button--secondary {
+    border-radius: 16px;
+    border: 1px solid $black;
+    background-color: $white;
 
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-    }
-
-    &__address-wrap,
-    &__hours-wrap {
-        display: flex;
-        align-items: center;
-
-        .header__image {
-            width: 16px;
-            height: 15px;
-            margin-right: 4px;
-
-            &--address {}
-
-            &--clock {}
-        }
-
-        .header__address,
-        .header__hours {
-            font-size: 14px;
-            font-weight: 400;
-            color: var(--primary-color);
-        }
-    }
-
-    &__main {
-        padding: 12px 0;
-
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-    }
-
-    &__logo {
-        display: flex;
-    }
-
-    &__nav {
-        display: flex;
-
-        &-list {
-            display: flex;
-        }
-
-        &-item:not(:last-child) {
-            margin-right: 4px;
-        }
-
-        &-link {
-            padding: 10px 20px;
-
-            border: 1px solid transparent;
-            border-bottom-color: rgb(220, 225, 233);
-            border-radius: 16px;
-
-            transition: all .15s;
-
-            font-size: 16px;
-            line-height: 24px;
-        }
-
-        &-link:hover {
-            border: 1px solid var(--btn-color);
-        }
-    }
-
-    &__right {
-        display: flex;
-        align-items: center;
-    }
-
-    &__search {
-        display: flex;
-        align-items: center;
-
-        padding: 3px 7px;
-
-        margin-right: 8px;
-
-        border: 1px solid var(--gray-color);
-        border-radius: 16px;
-
-        &-input {
-            border: none;
-
-            font-size: 14px;
-            line-height: 24px;
-            color: var(--text-color);
-            padding: 4px 12px;
-        }
-
-        &-input::placeholder {
-            color: var(--gray-color);
-        }
-
-        &-input:focus {
-            outline: none;
-        }
-    }
-
-    &__btn {
-        padding: 8px 20px;
-    }
+    font-size: 14px;
+    font-weight: 700;
+    color: $black;
 }
 
-.main {
-    .section {
-        background-color: #F3F6FB;
-
-        .container {
-            .breadcrumbs {
-                display: flex;
-                align-items: center;
-
-                padding: 12px 0;
-
-                &__list {
-                    display: flex;
-                }
-
-                &__item {
-                    &:not(:last-child) {
-                        margin-right: 26px;
-
-                        &::after {
-                            content: url('/public/breadcrumbs-arrow.svg');
-                            display: inline-block;
-                            margin-left: 23px;
-                        }
-                    }
-                }
-
-                &__link {
-                    color: #646970;
-                    line-height: 20px;
-                }
-            }
-        }
-    }
-}
+@import 'blocks/header';
+@import 'blocks/breadcrumbs';
+@import 'blocks/main-section';
+@import 'blocks/credit';

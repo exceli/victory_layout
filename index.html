@@ -58,29 +58,263 @@
                         <input class="header__search-input" type="text" placeholder="Поиск по сайту">
                     </div>
 
-                    <button class="header__btn primary-btn">Связаться</button>
+                    <button class="header__btn button--primary">Связаться</button>
                 </div>
             </div>
         </div>
     </header>
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__wrapper">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Каталог</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Haval</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Jolion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <main class="main">
         <section class="section">
             <div class="container">
-                <div class="breadcrumbs">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">
-                            <a class="breadcrumbs__link" href="#">Главная</a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <a class="breadcrumbs__link" href="#">Каталог</a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <a class="breadcrumbs__link" href="#">Haval</a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <a class="breadcrumbs__link" href="#">Jolion</a>
-                        </li>
-                    </ul>
+                <div class="main">
+                    <div class="main__header">
+                        <div class="main__top top">
+                            <div class="top__left">
+                                <h1 class="top__title">Haval Jolion</h1>
+                                <div class="top__subtitle">в Новосибирске</div>
+                            </div>
+                            <div class="top__right">
+                                <div class="dot"></div>
+                                <span class="top__text">4 автомобиля в наличии</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__content">
+                        <div class="main__left left">
+                            <div class="left__wrapper">
+                                <div class="left__top">
+                                    <div class="left__sale">
+                                        <span class="left__sale-text">-30%</span>
+                                    </div>
+                                    <div class="left__info">
+                                        <div class="left__label">Цвет</div>
+                                        <div class="left__value">Благородный агат</div>
+                                    </div>
+                                    <img class="left__image" src="public/main-section-image.png" alt="car">
+                                </div>
+                                <div class="left__bottom bottom">
+                                    <ul class="bottom__list">
+                                        <li class="bottom__item">
+                                            <button class="bottom__btn gray select"></button>
+                                        </li>
+                                        <li class="bottom__item">
+                                            <button class="bottom__btn black"></button>
+                                        </li>
+                                        <li class="bottom__item">
+                                            <button class="bottom__btn white"></button>
+                                        </li>
+                                        <li class="bottom__item">
+                                            <button class="bottom__btn blue"></button>
+                                        </li>
+                                        <li class="bottom__item">
+                                            <button class="bottom__btn red"></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__right right">
+                            <div class="right__wrap">
+                                <ul class="right__card-list">
+                                    <li class="right__card-item card">
+                                        <div class="card__wrapper">
+                                            <img class="card__image" src="public/card-image1.svg" alt="card-img">
+                                            <div class="card__content">
+                                                <div class="card__label">Мощность</div>
+                                                <div class="card__value">249 Л.С.</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="right__card-item card">
+                                        <div class="card__wrapper">
+                                            <img class="card__image" src="public/card-image2.svg" alt="card-img">
+                                            <div class="card__content">
+                                                <div class="card__label">Объем двигателя</div>
+                                                <div class="card__value">2.0 Л</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="right__card-item card">
+                                        <div class="card__wrapper">
+                                            <img class="card__image" src="public/card-image3.svg" alt="card-img">
+                                            <div class="card__content">
+                                                <div class="card__label">Расход</div>
+                                                <div class="card__value">8.2 Л</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="right__card-item card">
+                                        <div class="card__wrapper">
+                                            <img class="card__image" src="public/card-image4.svg" alt="card-img">
+                                            <div class="card__content">
+                                                <div class="card__label">Привод</div>
+                                                <div class="card__value">Полный</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="right__checkbox-wrap checkbox-wrap">
+                                    <ul class="checkbox-wrap__list">
+                                        <li class="checkbox-wrap__item">
+                                            <div class="checkbox-wrap__wrapper">
+                                                <div class="checkbox-wrap__check">
+                                                    <input class="checkbox-wrap__input checkbox" type="checkbox">
+                                                    <div class="custom-checkbox">
+                                                        <span></span>
+                                                    </div>
+                                                    <label class="checkbox-wrap__label" for="checkbox">Скидка по
+                                                        Trade-in</label>
+                                                </div>
+                                                <span class="checkbox-wrap__price">- 170 000 ₽</span>
+                                            </div>
+                                        </li>
+                                        <li class="checkbox-wrap__item">
+                                            <div class="checkbox-wrap__wrapper">
+                                                <div class="checkbox-wrap__check">
+                                                    <input class="checkbox-wrap__input checkbox" type="checkbox">
+                                                    <div class="custom-checkbox">
+                                                        <span></span>
+                                                    </div>
+                                                    <label class="checkbox-wrap__label" for="checkbox">Покупка в
+                                                        кредит</label>
+                                                </div>
+                                                <span class="checkbox-wrap__price">- 250 000 ₽</span>
+                                            </div>
+                                        </li>
+                                        <li class="checkbox-wrap__item">
+                                            <div class="checkbox-wrap__wrapper">
+                                                <div class="checkbox-wrap__check">
+                                                    <input class="checkbox-wrap__input checkbox" type="checkbox">
+                                                    <div class="custom-checkbox">
+                                                        <span></span>
+                                                    </div>
+                                                    <label class="checkbox-wrap__label" for="checkbox">Скидка по
+                                                        программе утилизации</label>
+                                                </div>
+                                                <span class="checkbox-wrap__price">- 80 000 ₽</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="right__sale sale">
+                                    <div class="sale__title">Ваша выгода</div>
+                                    <span class="sale__price">330 000 ₽</span>
+                                </div>
+
+                                <div class="right__price price">
+                                    <div class="price__wrap">
+                                        <div class="price__title">от <span class="price__value">7 070 000 ₽</span></div>
+                                        <div class="price__credit">В кредит от <span class="price__value">89 000
+                                                ₽/мес</span></div>
+                                    </div>
+                                    <div class="price__discount">Цена без учета скидки: от <span class="price__value">7
+                                            400 000 ₽</span>
+                                    </div>
+                                </div>
+
+                                <div class="right__buttons buttons">
+                                    <button class="buttons__button button button--secondary">Забронировать</button>
+                                    <button class="buttons__button button button--primary">Купить в рассрочку</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section credit">
+            <div class="container">
+                <div class="credit__wrapper">
+                    <div class="credit__title-wrap">
+                        <h3 class="credit__title">Рассчитайте условия по кредиту на Haval Jolion</h3>
+                    </div>
+
+                    <div class="credit__calculator calculator">
+                        <div class="calculator__wrapper">
+                            <div class="calculator__left">
+                                <div class="calculator__header">
+                                    <div class="calculator__title">Сумма кредита</div>
+                                    <span class="calculator__value">7 070 000 ₽</span>
+                                </div>
+                                <div>
+                                    <div class="calculator__section">
+                                        <div class="calculator__wrap">
+                                            <div class="calculator__label">Первоначальный взнос</div>
+                                            <span class="calculator__section-value">4 000 000 ₽</span>
+                                            <input class="calculator__input" type="range" min="0" max="7400000"
+                                                value="3600000" step="100000">
+                                        </div>
+                                        <div class="calculator__progress">
+                                            <div class="calculator__progress-min">0%</div>
+                                            <div class="calculator__progress-max">90%</div>
+                                        </div>
+                                    </div>
+                                    <div class="calculator__section">
+                                        <div class="calculator__wrap">
+                                            <div class="calculator__label">Срок кредита</div>
+                                            <span class="calculator__section-value">6 мес.</span>
+                                            <input class="calculator__input" type="range" min="12" max="84" value="36"
+                                                step="1">
+                                        </div>
+                                        <div class="calculator__progress">
+                                            <div class="calculator__progress-min">6 мес.</div>
+                                            <div class="calculator__progress-max">8 лет</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calculator__right calculator-right">
+                                <div class="calculator-right__wrapper">
+                                    <div class="calculator-right__content-wrap">
+                                        <div class="calculator-right__title-wrap">
+                                            <div class="calculator-right__title">Наше предложения</div>
+                                        </div>
+                                        <div class="calculator-right__content">
+                                            <div class="calculator-right__label">Ежемесячный платеж</div>
+                                            <div class="calculator-right__wrap">
+                                                <button class="calculator-right__btn minus">
+                                                    <img src="public/minus.svg" alt="minus">
+                                                </button>
+                                                <input class="calculator-right__input" type="number" value="30000"
+                                                    placeholder="30 000 ₽" readonly>
+                                                <button class="calculator-right__btn plus">
+                                                    <img src="public/plus.svg" alt="plus">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="calculator-right__info">
+                                            <img class="calculator-right__icon" src="public/info.svg" alt="info">
+                                            <div class="calculator-right__text">Расчет носит инфомационный характер, не
+                                                является публичной офертой</div>
+                                        </div>
+                                    </div>
+                                    <button class="calculator-right__button button button--primary">Купить в
+                                        кредит</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

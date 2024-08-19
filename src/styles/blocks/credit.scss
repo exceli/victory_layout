@@ -1,0 +1,279 @@
+.main {
+    .credit {
+        padding: 80px 0;
+
+        border-radius: 40px;
+        background: rgb(228, 236, 248);
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__title {
+            margin-bottom: 40px;
+
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 44px;
+        }
+
+        .calculator {
+            width: 1108px;
+
+            &__wrapper {
+                display: flex;
+                justify-content: space-between;
+
+                padding: 40px;
+
+                gap: 40px;
+
+                border-radius: 16px;
+                background-color: rgb(243, 246, 251);
+            }
+
+            &__left {
+                display: flex;
+                flex-direction: column;
+
+                flex: 1;
+
+                gap: 23px;
+            }
+
+            &__header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            &__title {
+                color: rgb(100, 105, 112);
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            &__value {
+                color: $blue;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 28px;
+            }
+
+            &__section {}
+
+            &__section:not(:last-child) {
+                margin-bottom: 24px;
+            }
+
+            &__wrap {
+                position: relative;
+
+                padding: 8px 16px 0;
+
+                height: 64px;
+
+                margin-bottom: 9px;
+
+                border-radius: 12px 12px 0px 0px;
+                background: #fff;
+            }
+
+            &__label {
+                color: rgb(100, 105, 112);
+                font-size: 14px;
+                line-height: 23px;
+            }
+
+            &__section-value {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+
+            &__input {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+                width: 100%;
+
+                -webkit-appearance: none;
+                appearance: none;
+
+                height: 2px;
+
+                background: #ddd;
+
+                outline: none;
+            }
+
+            &__input::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+
+                width: 20px;
+                height: 20px;
+
+                border-radius: 50%;
+                background: $blue;
+
+                cursor: pointer;
+            }
+
+            &__input::-moz-range-thumb {
+                width: 16px;
+                height: 16px;
+
+                border-radius: 50%;
+                background: $blue;
+
+                cursor: pointer;
+            }
+
+            &__progress {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                color: rgb(100, 105, 112);
+            }
+
+            &__right {
+                flex: 1;
+            }
+
+            .calculator-right {
+                border-radius: 16px;
+                background-color: #fff;
+
+                height: 275px;
+
+                &__wrapper {
+                    position: relative;
+
+                    height: 100%;
+
+                    padding: 20px 24px;
+                }
+
+                &__content-wrap {}
+
+                &__title-wrap {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    margin-bottom: 22px;
+                }
+
+                &__title {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 28px;
+                }
+
+                &__content {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    margin-bottom: 23px;
+                }
+
+                &__label {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+
+                &__wrap {
+                    display: flex;
+                    align-items: center;
+                }
+
+                &__btn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    width: 24px;
+                    height: 24px;
+
+                    border: 1px solid $gray;
+                    border-radius: 50%;
+                }
+
+                .minus {}
+
+                .plus {}
+
+                &__input {
+                    border: 0;
+
+                    margin: 0 24px;
+
+                    width: 100px;
+
+                    text-align: center;
+                    color: $blue;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 32px;
+                }
+
+                &__input::-webkit-outer-spin-button,
+                &__input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                &__input:focus-visible {
+                    outline: none;
+                }
+
+                &__info {
+                    display: flex;
+                    align-items: flex-start;
+
+                    padding: 10px 14px;
+
+                    border-radius: 12px;
+                    background-color: rgb(243, 246, 251);
+                }
+
+                &__icon {
+                    margin-right: 8px;
+                }
+
+                &__text {
+                    max-width: 65%;
+
+                    color: rgb(100, 105, 112);
+                    line-height: 19px;
+                }
+
+                &__button {
+                    position: absolute;
+                    right: 24px;
+                    bottom: 20px;
+
+                    width: max-content;
+
+                    margin-top: auto;
+                    margin-left: auto;
+                    padding: 12px 24px;
+                }
+            }
+        }
+    }
+}
