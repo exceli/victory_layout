@@ -30,8 +30,8 @@ $(document).ready(function () {
 
     var swiper = new Swiper('.swiper', {
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.slider__arrow--next',
+            prevEl: '.slider__arrow--prev',
         },
 
         slidesPerView: 4,
