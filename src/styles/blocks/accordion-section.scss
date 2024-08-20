@@ -1,0 +1,102 @@
+.main {
+    .accordion-section {
+        padding: 44px 0;
+
+        padding-bottom: 350px;
+
+        background-color: #fff;
+
+        .accordion.active .accordion__content {
+            max-height: 500px;
+        }
+
+        .accordion__content.open {
+            max-height: 500px;
+        }
+
+        .accordion.active .accordion__btn-image {
+            transform: rotate(90deg);
+        }
+
+        .accordion {
+            &__button {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                width: 100%;
+
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 28px;
+            }
+
+            &__btn-image {
+                transform: rotate(270deg);
+
+                transition: transform 0.3s ease;
+            }
+
+            &__content {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+
+                margin-top: 15px;
+
+                padding-top: 21px;
+
+                border-top: 1px solid $gray;
+            }
+
+            &__list {}
+
+            &__item {
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &__title {
+                padding-bottom: 7px;
+
+                color: $gray;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            &__buttons {
+                display: flex;
+
+                gap: 12px;
+            }
+
+            &__btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                flex: 1;
+
+                padding: 10px 0;
+
+                border-radius: 16px;
+                background: rgb(243, 246, 251);
+            }
+
+            &__btn-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border-radius: 50%;
+                background-color: $black;
+
+                width: 24px;
+                height: 24px;
+            }
+
+        }
+    }
+}

@@ -37,4 +37,16 @@ $(document).ready(function () {
         slidesPerView: 4,
         spaceBetween: 12,
     })
+
+    const accordionButtons = document.querySelectorAll('.accordion__button')
+
+    accordionButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const accordion = this.closest('.accordion')
+
+            if (accordion) {
+                accordion.classList.toggle('active')
+            }
+        })
+    })
 })
