@@ -27,4 +27,14 @@ $(document).ready(function () {
         currentValue = Math.max(0, currentValue - step)
         input.value = currentValue
     })
+
+    var swiper = new Swiper('.swiper', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        slidesPerView: 4,
+        spaceBetween: 12,
+    })
 })

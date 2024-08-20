@@ -35,9 +35,9 @@ button {
 }
 
 .container {
-    max-width: 100%;
-    margin: auto;
-    padding: 0 294px
+    max-width: 1332px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button--primary {
@@ -63,3 +63,4 @@ button {
 @import 'blocks/breadcrumbs';
 @import 'blocks/main-section';
 @import 'blocks/credit';
+@import 'blocks/slider-section';
